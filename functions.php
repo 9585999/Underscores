@@ -127,6 +127,13 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
- * Customizer additions.
+ * Kirki customizer framework
+ */
+if ( !class_exists( 'Kirki' ) ){
+	require get_template_directory() . '/inc/kirki/kirki.php';
+}
+
+/**
+ * Customizer config..
  */
 require get_template_directory() . '/inc/customizer.php';
